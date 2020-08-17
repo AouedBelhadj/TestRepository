@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>BDD</title>
+			<link rel="stylesheet" href="bdd.css">
+		</head>
+		<body>
+		<form name="MonFormulaire" method="post">
+		<h2>Informations relatives à la base de données</h2>
+			<label for="nom">Nom de la BDD</label>
+			<input name="n1" id="nom" type="text"
+					placeholder="Entrez le nom de la BDD">
+			<br>
+			<label for="version">Version</label>
+			<input name="n2" id="version" type="text"
+					value="1.0">
+			<br>
+			<label for="commentaire">Commentaire</label>
+			<input name="n3" id="commentaire" type="text"
+					value="essai WebSQL">
+			<br>
+			<label for="taille">Taille (min 2 000 ko)</label>
+			<input name="n4" id="taille" type="text"
+					value="2000000">
+			<br>
+			
+			<h2>Informations relatives à la table</h2>
+			<label for="table">Nom de la table</label>
+			<input name="n5" id="table" type="text"
+					placeholder="Entrez le nom de la table">
+			<br>
+			<label for="colonne1">Colonne 1</label>
+			<input name="n6" id="colonne1" type="text"
+					placeholder="Nom de la colonne1">
+			<br>
+			<label for="colonne2">Colonne 2</label>
+			<input name="n7" id="colonne2" type="text"
+					placeholder="Nom de la colonne2">
+			<br>
+			
+			<h2>Informations relatives à l'enregistrement</h2>
+			<label for="valeur1">Valeur de la colonne1</label>
+			<input name="n8" id="valeur1" type="text"
+					placeholder="Valeur de la colonne1">
+			<br>
+			<label for="valeur2">Valeur de la colonne2</label>
+			<input name="n9" id="valeur2" type="text"
+					placeholder="Valeur de la colonne2">
+			<br>
+			
+			<br>				
+			<input type="button" 
+			value="Tester la compatibilité" 
+			onclick="compatibilite()">
+			<br>				
+			<input type="button" 
+			value="Créer la BDD" 
+			onclick="creerBDD()">
+			<br>				
+			<input type="button" 
+			value="Créer la table" 
+			onclick="creerTable()">
+			<br>
+			<input type="button" 
+			value="Ajouter un enregistrement" 
+			onclick="ligne()">
+			<br>
+			<input type="button" 
+			value="Supprimer la table" 
+			onclick="supprimerTable()">
+			<br>				
+	
+		</form>
+
+		<script src="bdd.js"></script>
+		</body>
+		</html>
